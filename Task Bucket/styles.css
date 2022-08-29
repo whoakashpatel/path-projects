@@ -1,0 +1,190 @@
+:root {
+    --primary: rgba(133, 67, 232, 0.7);
+    --primary-hover: rgb(133, 67, 232);
+    --secondary: rgba(47, 140, 228, 0.7);
+    --secondary-hover: rgb(47, 140, 228);
+    --card-background: rgb(10, 5, 21);
+    --font-primary: rgba(255, 255, 255, 0.6);
+    --font-primary-hover: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    background: hsla(276, 91%, 79%, 1);
+    background: linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Main Card */
+
+.main {
+    width: 60vw;
+    height: 85vh;
+    margin: 3vh auto;
+    padding: 2rem;
+    background: var(--card-background);
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    outline: 3px solid rgba(76, 34, 149, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 50rem) {
+    .main {
+        width: 80vw;
+    }
+}
+
+/* Title Text */
+
+.title-text {
+    font-size: 4rem;
+    padding: 2vw;
+    color: var(--font-primary);
+}
+
+.title-text:hover {
+    color: var(--font-primary-hover);
+}
+
+@media (max-width: 60rem) {
+    .title-text {
+        font-size: 3.5rem;
+        padding-block: 4vw;
+    }
+}
+
+@media (max-width: 40rem) {
+    .title-text {
+        font-size: 3rem;
+    }
+}
+
+/* Task List */
+
+.task-list {
+    padding: 2vw;
+}
+
+/* Task Container */
+
+.indiv-task {
+    display: flex;
+    gap: 2vw;
+    margin-block: 0.6rem;
+}
+
+/* Task Checkbox */
+
+#task-checkbox {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: auto 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* Task Text */
+
+#task-text {
+    flex: 1;
+    height: 2.5rem;
+    color: var(--font-primary);
+    cursor: pointer;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#task-text:hover {
+    color: var(--font-primary-hover);
+}
+
+@media (max-width: 40rem) {
+    #task-checkbox {
+        height: 2rem;
+        width: 2rem;
+    }
+    #task-text {
+        height: 2rem;
+    }
+}
+
+/* Task Adding Button */
+
+.add-task-btn {
+    background: none;
+    border: 3px solid var(--primary);
+    border-radius: 1rem;
+    color: var(--font-primary);
+    font-size: 1.3rem;
+    padding: 0.4rem;
+}
+
+.add-task-btn:hover {
+    border-color: var(--primary-hover);
+    color: var(--font-primary-hover);
+}
+
+.add-task-btn:active {
+    background-color: var(--primary-hover);
+}
+
+@media (max-width: 40rem) {
+    .add-task-btn {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+}
+
+/* Input */
+
+input {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+/* Border + Hovering */
+
+.title-text, .task-list {
+    border: 4px solid var(--primary);
+    border-radius: 0.8rem;
+}
+
+.title-text:hover, .task-list:hover {
+    border-color: var(--primary-hover);
+}
+
+#task-text, #task-checkbox {
+    border: 3px solid var(--secondary);
+    border-radius: 0.8rem;
+}
+
+#task-text:hover, #task-checkbox:hover {
+    border-color: var(--secondary-hover);
+}
+
+/* Toggle Classes */
+
+.done-task {
+    opacity: 0.3;
+}

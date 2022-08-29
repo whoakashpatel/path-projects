@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 2rem 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1641380184601-06e153dec2fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+    color: floralwhite;
+}
+
+hr {
+    width: 100px;
+    border-style: none;
+    border-top-style: dotted;
+    margin: 0 auto;
+    border-width: 12px;
+    color: #9d7e0e;
+    opacity: 1;
+}
+
+/* Containers */
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player-1-container, .player-2-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Headings */
+
+p {
+    margin: 1rem 0;
+}
+
+.main-heading {
+    font-family: 'Chewy';
+    font-size: 8rem;
+    font-weight: bolder;
+    color: #c58b1e;
+    margin: 0;
+}
+
+.player-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    color: floralwhite;
+}
+
+/* Image */
+
+.dice-img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Button */
+
+.btn {
+    font-size: 2rem;
+    background-color: #c29a68;
+    color: black;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.btn:hover {
+    color: #fb8500;
+}
