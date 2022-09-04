@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e5695e0564.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Title -->
+    <title>Gradient Generator</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="navbar">
+        <p class="title"></p>
+        <span class="nav-links"></span>
+    </div>
+    <!-- Main Body -->
+    <div class="main">
+        <div class="head">
+            <p class="heading">Gradient Generator</p>
+            <p class="subtext"></p>
+        </div>
+        <div class="settings-form">
+            <form class="options" action="" method="get">
+                <div>
+                    <label for="gradient-type">Gradient Type :</label>
+                    <select id="gradient-type" name="type">
+                        <option value="">--Choose A Type--</option>
+                        <option value="linear-gradient">Linear</option>
+                        <option value="radial-gradient">Radial</option>
+                    </select>
+                </div>
+                <div>
+                    <div>
+                        <label for="color-1">Color 1 :</label>
+                        <input type="color" name="color1" id="color-1">
+                    </div>
+                    <div>
+                        <label for="color-2">Color 2 :</label>
+                        <input type="color" name="color1" id="color-2">
+                    </div>
+                    <div>
+                        <label for="angle">Angle</label>
+                        <input type="number" id="angle">
+                    </div>
+                </div>
+                <input class="input-submit" type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+:root {
+    --primary-color: rgb(154, 100, 217);
+    --secondary-color: rgb(169, 124, 220);
+    --primary-gradient: linear-gradient(0.35turn, var(--primary-color), var(--secondary-color))
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes background {
+    50% {background: linear-gradient(#111, #fff)}
+}
+
+body {
+    background: linear-gradient(#fff, #111);
+    /* animation: background 2s infinite; */
+}
+
+.main {
+    width: 30vw;
+    height: 60vh;
+    border-radius: 1rem;
+    margin: 20vh 35vw;
+    background: whitesmoke;
+    box-shadow: 0 0 1rem rgb(80,80,80,0.5);
+    position: relative;
+}
+
+.head {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    background: var(--primary-gradient);
+}
+
+.heading, .subtext {
+    font-family: 'Poppins', sans-serif;
+    color: #ddd;
+    line-height: 1;
+}
+
+.heading {font-size: 1.5rem;}
+.subtext {font-size: .5rem;}
+
+.settings-form {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--primary-gradient);
+}
+
+input, select, option, label {
+    outline: none;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div {
+    flex: 1;
+    margin-block: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+select {width: 60%; margin-inline: 1rem 0;}
+input {margin-inline: 0.5rem; background-color: #eee;}
+label {color: #ddd;}
+.input-submit {width: 30%; background-color: #fff;}
