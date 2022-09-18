@@ -24,7 +24,7 @@ body {
     height: 60vh;
     border-radius: 1rem;
     margin: 20vh 35vw;
-    background: whitesmoke;
+    background: #ddd;
     box-shadow: 0 0 1rem rgb(80,80,80,0.5);
     position: relative;
 }
@@ -63,19 +63,21 @@ input, select, option, label {
     font-size: 1rem;
 }
 
+input[type="color"] {border-radius: 0%;}
+
 form {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 form > div {
     flex: 1;
-    margin-block: 0.5rem;
     display: flex;
     justify-content: space-between;
 }
 
 select {width: 60%; margin-inline: 1rem 0;}
-input {margin-inline: 0.5rem; background-color: #eee;}
+input {background-color: #ddd;}
 label {color: #ddd;}
-.input-submit {width: 30%; background-color: #fff;}
+.input-submit {margin-top: 0.5rem; padding: 0.2rem; background-color: #fff;}
