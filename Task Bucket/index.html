@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- Title -->
     <title>Task Bucket</title>
 </head>
 <body>
+
+    <p class="title">To Do List</p>
     <div class="main">
-        <input type="text" class="title-text" name="title-text" placeholder="Battles to face🤠!">
-        <div class="task-list">
-            <div class="indiv-task task1">
-                    <div id="task-checkbox" class="task1" style="background-image: url('img/uncheck.png');"></div>
-                    <input type="text" name="task-text" id="task-text">
-            </div>
+        <div class="tile task-adder">
+            <p class="heading">Your Title Here</p>
+            <button class="add-task">+</button>
         </div>
-        <button class="add-task-btn" onclick="addTask(this)">Add More Tasks</button>
     </div>
+
+    <!-- JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
     <script src="index.js"></script>
+
 </body>
 </html>
